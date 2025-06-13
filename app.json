@@ -1,11 +1,12 @@
 {
   "expo": {
-    "name": "smarthabit-tracker",
+    "name": "HabitFlow",
     "slug": "smarthabit-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/habit_logo.png",
     "scheme": "smarthabittracker",
+    "owner": "vishnukothakapu27",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -13,10 +14,11 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/habit_logo.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.vishnukothakapu27.smarthabittracker"
     },
     "web": {
       "bundler": "metro",
@@ -28,15 +30,21 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/habit_logo.png",
           "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "resizeMode": "contain"
+          
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f1454656-b82b-4654-b929-b732835cb96c"
+      }
     }
   }
 }
